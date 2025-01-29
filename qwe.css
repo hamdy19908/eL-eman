@@ -1,0 +1,522 @@
+/* ملف styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdc7df ;
+}
+
+/* ملف styles.css */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(235, 235, 235);
+    color: #e4e4e4;
+    padding: 10px 20px; 
+}
+
+header .menu-btn {
+    font-size: 20px;
+    color: #000000;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .asd {  
+    color: #000000;
+    font-size: 40px; 
+    text-align: center;
+   
+
+}
+.ase {  
+    color: #000000;
+    font-size: 40px; 
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* البداية خارج الشاشة */
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    color: #333;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    padding: 0;
+}
+
+.menu-header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* شكل دائري */
+    margin-bottom: 10px;
+}
+
+.menu-header h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.menu-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #b9b9b9;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    border-bottom: 1px solid #ffffff;
+}
+
+.sidebar a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* عندما تكون القائمة مفتوحة */
+.sidebar.open {
+    left: 0; /* تظهر القائمة */
+}
+
+main {
+    padding: 20px;
+}
+
+.asdasdasd{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+h2{
+    text-align: center;
+}
+img {
+    max-width: 100%; /* منع الصورة من تجاوز عرض الشاشة */
+    height: auto; /* الحفاظ على تناسب أبعاد الصورة */
+  
+    border-radius: 10px; /* زوايا دائرية للصورة (اختياري) */
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/background.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: hsl(0, 0%, 0%);
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+    background-color: #ffffff;
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #e7e7e7;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%;
+    padding: 10px;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000000;
+}
+
+.project-categor {
+    font-size: 1.5em;
+    color: #000;
+}
+
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.4em;
+    border-top: 10px;
+    border-bottom: #000000;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: seashell;
+    padding: 10px;
+    text-align: right;
+    margin-left: 150px; 
+}
+
+.more-details:hover {
+    color: #ffffff;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
+.asdqweqwe{
+    color: rgb(0, 0, 0);
+    font: px cairo-bold;
+    margin: 0px 0px 8px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-bottom: 0;
+     
+        
+    
+      
+      
+}
+.vbn{
+background-color: rgb(203, 203, 203);
+display: block;
+
+     
+
+ }
+
+ .footer {
+    background-color: #fdc7df ;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around; /* توزيع الأيقونات بالتساوي */
+    align-items: center; /* محاذاة العناصر عموديًا */
+    max-width: 800px; /* تحديد عرض الفوتر */
+    margin: 0 auto; /* توسيط الفوتر في الصفحة */
+  }
+  
+  .icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .icon img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  .icon {
+    text-decoration: none;
+  }
+  
+  .con{
+     display: block;
+     font-size: 60px;
+    
+ }
+  .op{
+    border-radius: 10px;
+    background-color: sandybrown;
+    border-color: seashell;
+    padding: 10px;
+    text-decoration: none;
+   
+    margin-left: 80px;
+
+    margin-bottom: 50px;
+
+}
+.opop{
+   font-size: 33px;
+   text-align: center;
+   padding-left: 200px;
+   padding: 33px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* تقسيم الشبكة إلى عمودين */
+    gap: 10px; /* المسافة بين الخانات */
+  }
+
+  .box {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* إزالة الخط السفلي للنص */
+    color: #000; /* لون النص */
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+  }
+
+  .box:hover {
+    background-color: #ddd; /* لون عند التمرير */
+  }
+
+  .fot{
+    display: block;
+  }
+
+  .وظائف{
+    text-align: center;
+    
+  }
+
+  .cvb{
+   background-color: #eeeeee;
+   padding: 50px;
+
+
+  }
+
+    
